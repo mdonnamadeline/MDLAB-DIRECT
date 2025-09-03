@@ -3,6 +3,12 @@ import ogLogo from "../images/oglogo.png";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import CardActionArea from '@mui/material/CardActionArea';
 import { useState, useRef } from 'react';
 
 export default function LandingPage() {
@@ -21,6 +27,7 @@ export default function LandingPage() {
           <li>Location</li>
           <li>Services</li>
           <li>About Us</li>
+          <li>Contact Us</li>
         </ul>
         <div className="nav-buttons">
           <div className="dropdown-container"
@@ -66,7 +73,7 @@ export default function LandingPage() {
               </div>
             )}
           </div>
-          <button className="btn small">Contact: 0999 994 8372</button>
+          <button className="btn small">Download App</button>
         </div>
       </nav>
 
@@ -85,6 +92,127 @@ export default function LandingPage() {
           </div>
         </div>
       </header>
+
+      {/* Cards Section */}
+      <section className="cards-section">
+        <div className="cards-container">
+          <Card className="mui-card">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image="https://via.placeholder.com/345x140/40C4B4/ffffff?text=Quick+Results"
+                alt="Quick Results"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Quick Results
+                </Typography>
+                <Typography variant="body2" className="card-description">
+                  Get your lab results fast and securely online. No more waiting in lines.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          
+          <Card className="mui-card">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image="https://via.placeholder.com/345x140/FF69B4/ffffff?text=Book+Appointment"
+                alt="Book Appointment"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Book Appointment
+                </Typography>
+                <Typography variant="body2" className="card-description">
+                  Schedule your lab tests at your convenience. Easy online booking system.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          
+          <Card className="mui-card">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image="https://via.placeholder.com/345x140/007BFF/ffffff?text=Home+Service"
+                alt="Home Service"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Home Service
+                </Typography>
+                <Typography variant="body2" className="card-description">
+                  Lab tests at your doorstep. Safe and convenient sample collection.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          
+          <Card className="mui-card">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image="https://via.placeholder.com/345x140/28A745/ffffff?text=Health+Packages"
+                alt="Health Packages"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Health Packages
+                </Typography>
+                <Typography variant="body2" className="card-description">
+                  Comprehensive health check-up packages at affordable prices.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          
+          <Card className="mui-card">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image="https://via.placeholder.com/345x140/DC3545/ffffff?text=Emergency+Tests"
+                alt="Emergency Tests"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Emergency Tests
+                </Typography>
+                <Typography variant="body2" className="card-description">
+                  24/7 emergency laboratory services for urgent medical needs.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          
+          <Card className="mui-card">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image="https://via.placeholder.com/345x140/FFC107/ffffff?text=Corporate+Wellness"
+                alt="Corporate Wellness"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Corporate Wellness
+                </Typography>
+                <Typography variant="body2" className="card-description">
+                  Workplace health programs and employee wellness check-ups.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </div>
+      </section>
+
+      
 
       {/* Services Section */}
       <section className="whats-new">
@@ -105,26 +233,8 @@ export default function LandingPage() {
               <li>• Creatinine</li>
               <li>• AST (Aspartate Aminotransferase)</li>
               <li>• ALT (Alanine Aminotransferase)</li>
-            </ul>
-          </div>
-
-          <div className="service-category">
-            <h4>CBC (Complete Blood Count)</h4>
-            <ul className="service-list">
-              <li>• Red Blood Cell Count</li>
-              <li>• White Blood Cell Count</li>
-              <li>• Hemoglobin & Hematocrit</li>
-              <li>• Platelet Count</li>
-              <li>• Differential Count</li>
-            </ul>
-          </div>
-
-          <div className="service-category">
-            <h4>UA (Urinalysis)</h4>
-            <ul className="service-list">
-              <li>• Physical Examination (Color, Clarity, Specific Gravity, pH)</li>
-              <li>• Chemical Examination (Protein, Glucose, Ketones, Bilirubin, Urobilinogen, Blood)</li>
-              <li>• Microscopic Examination (Red Blood Cells, White Blood Cells, Casts, Crystals, Bacteria, Parasites)</li>
+              <li>CBC (Complete Blood Count)</li>
+              <li>UA (Urinalysis)</li>
             </ul>
           </div>
 
@@ -149,6 +259,12 @@ export default function LandingPage() {
         <p>MDLAB - Your Trusted Diagnostic Laboratory Partner</p>
         <p>Almaguer North, Bambang, Philippines | Contact: 0999 994 8372</p>
         <p>Email: mdlab_diagnostics@yahoo.com.ph</p>
+        <p>
+          <FacebookIcon style={{marginRight: '8px', verticalAlign: 'middle', color: '#1877F2'}} /> 
+          <a href="https://www.facebook.com/vizcayalab" target="_blank" rel="noopener noreferrer" style={{color: '#1877F2', textDecoration: 'none'}}>
+            Follow us on Facebook
+          </a>
+        </p>
         <div className="footer-links">
           <a href="/">Privacy Policy</a> | 
           <a href="/">Contact Us</a> |
